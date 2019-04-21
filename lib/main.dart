@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
-import 'bottom_navigation_widget.dart';
+import 'bottom_appbar_demo.dart';
 
-void main()=>runApp(new  MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Flutter bottomNavigationBar",
-      theme: ThemeData.light(),
-      home: BottomNavigationWidget(),
+    return new MaterialApp(
+      debugShowCheckedModeBanner:false,
+      title: 'Detailed Bottom Navigation',
+      theme: ThemeData(
+        primaryColor: Colors.lightBlue
+      ),
+      home: BottomAppBarDemo(),
     );
   }
 }
-
